@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("8decaf29-beaa-40e2-95b5-3b5515d02b96",
+	'CardReader',
+	1,
+	'CardReader',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("ab04459a-926f-4d37-b5b8-91d62c5cbe2f",
+	"8decaf29-beaa-40e2-95b5-3b5515d02b96");
+INSERT INTO O_BATTR
+	VALUES ("ab04459a-926f-4d37-b5b8-91d62c5cbe2f",
+	"8decaf29-beaa-40e2-95b5-3b5515d02b96");
+INSERT INTO O_ATTR
+	VALUES ("ab04459a-926f-4d37-b5b8-91d62c5cbe2f",
+	"8decaf29-beaa-40e2-95b5-3b5515d02b96",
+	"00000000-0000-0000-0000-000000000000",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"8decaf29-beaa-40e2-95b5-3b5515d02b96");
+INSERT INTO O_ID
+	VALUES (1,
+	"8decaf29-beaa-40e2-95b5-3b5515d02b96");
+INSERT INTO O_ID
+	VALUES (2,
+	"8decaf29-beaa-40e2-95b5-3b5515d02b96");
+INSERT INTO PE_PE
+	VALUES ("8decaf29-beaa-40e2-95b5-3b5515d02b96",
+	1,
+	"7bd16cab-a94a-4f59-b963-fa51c84d62a4",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7bd16cab-a94a-4f59-b963-fa51c84d62a4",
+	"00000000-0000-0000-0000-000000000000",
+	"3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
+	'CardPayment',
+	'',
+	0,
+	'../CardPayment.xtuml');

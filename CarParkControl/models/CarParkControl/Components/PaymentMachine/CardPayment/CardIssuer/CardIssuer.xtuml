@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("f7af42df-c5ac-439e-abee-c7643b5fd721",
+	'CardIssuer',
+	3,
+	'CardIssuer',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("43314300-9644-47d1-9b3c-23b2be4eac24",
+	"f7af42df-c5ac-439e-abee-c7643b5fd721");
+INSERT INTO O_BATTR
+	VALUES ("43314300-9644-47d1-9b3c-23b2be4eac24",
+	"f7af42df-c5ac-439e-abee-c7643b5fd721");
+INSERT INTO O_ATTR
+	VALUES ("43314300-9644-47d1-9b3c-23b2be4eac24",
+	"f7af42df-c5ac-439e-abee-c7643b5fd721",
+	"00000000-0000-0000-0000-000000000000",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"f7af42df-c5ac-439e-abee-c7643b5fd721");
+INSERT INTO O_ID
+	VALUES (1,
+	"f7af42df-c5ac-439e-abee-c7643b5fd721");
+INSERT INTO O_ID
+	VALUES (2,
+	"f7af42df-c5ac-439e-abee-c7643b5fd721");
+INSERT INTO PE_PE
+	VALUES ("f7af42df-c5ac-439e-abee-c7643b5fd721",
+	1,
+	"7bd16cab-a94a-4f59-b963-fa51c84d62a4",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7bd16cab-a94a-4f59-b963-fa51c84d62a4",
+	"00000000-0000-0000-0000-000000000000",
+	"3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
+	'CardPayment',
+	'',
+	0,
+	'../CardPayment.xtuml');
