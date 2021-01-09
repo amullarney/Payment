@@ -75,7 +75,8 @@ INSERT INTO S_SYNC
 	'',
 	'create object instance reader of CardReader;
 create object instance issuer of CardIssuer;
-relate reader to issuer across R1.''processes transactions for'';',
+relate reader to issuer across R1.''processes transactions for'';
+::CreateCustomer();',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',

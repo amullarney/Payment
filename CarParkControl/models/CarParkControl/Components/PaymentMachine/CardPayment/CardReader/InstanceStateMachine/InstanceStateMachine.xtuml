@@ -322,7 +322,7 @@ INSERT INTO SM_STATE
 	VALUES ("7613fc2f-8804-4eff-ac1a-65768b05b5d0",
 	"704d2722-5f29-43fe-a454-457522db3676",
 	"00000000-0000-0000-0000-000000000000",
-	'AwaitingApproval',
+	'AwaitingPaymentApproval',
 	4,
 	0);
 INSERT INTO SM_CH
@@ -887,7 +887,7 @@ INSERT INTO GD_GE
 	"7613fc2f-8804-4eff-ac1a-65768b05b5d0",
 	41,
 	0,
-	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::AwaitingApproval');
+	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::AwaitingPaymentApproval');
 INSERT INTO GD_SHP
 	VALUES ("4f239666-8d59-42f4-b850-6946f80f73b8");
 INSERT INTO GD_NCS
@@ -1260,7 +1260,7 @@ INSERT INTO GD_GE
 	"ae3066fa-0856-4067-802d-ec6d725b743f",
 	42,
 	0,
-	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::AwaitingApproval::CardReader4: PaymentApproved');
+	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::AwaitingPaymentApproval::CardReader4: PaymentApproved');
 INSERT INTO GD_CON
 	VALUES ("345ceb64-c3f4-45a0-89f8-8a8687edf4a3",
 	"00000000-0000-0000-0000-000000000000");
