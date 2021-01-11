@@ -5,7 +5,7 @@ INSERT INTO O_OBJ
 	'Customer',
 	2,
 	'Customer',
-	'',
+	'A representation of a customer whose actions drive the card payment process.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
 	VALUES ("6bf98c49-f649-4797-ad90-51c7157d22cb",

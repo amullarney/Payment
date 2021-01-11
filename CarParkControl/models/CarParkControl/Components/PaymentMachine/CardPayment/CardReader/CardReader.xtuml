@@ -5,7 +5,8 @@ INSERT INTO O_OBJ
 	'CardReader',
 	1,
 	'CardReader',
-	'',
+	'A simplified representation of a device which collects credit card and user identification data.
+In this representation, the device makes a real-time request for transaction authorization.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
 	VALUES ("ab04459a-926f-4d37-b5b8-91d62c5cbe2f",

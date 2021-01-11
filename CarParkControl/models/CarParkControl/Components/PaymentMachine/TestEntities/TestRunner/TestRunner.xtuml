@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("e894e87c-8f27-469d-9586-566addf03869",
+	'TestRunner',
+	1,
+	'TestRunner',
+	'A driver for exercising a test case scenario.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("84e81119-eb38-4dca-b31d-f92875c4bbf2",
+	"e894e87c-8f27-469d-9586-566addf03869");
+INSERT INTO O_BATTR
+	VALUES ("84e81119-eb38-4dca-b31d-f92875c4bbf2",
+	"e894e87c-8f27-469d-9586-566addf03869");
+INSERT INTO O_ATTR
+	VALUES ("84e81119-eb38-4dca-b31d-f92875c4bbf2",
+	"e894e87c-8f27-469d-9586-566addf03869",
+	"00000000-0000-0000-0000-000000000000",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"e894e87c-8f27-469d-9586-566addf03869");
+INSERT INTO O_ID
+	VALUES (1,
+	"e894e87c-8f27-469d-9586-566addf03869");
+INSERT INTO O_ID
+	VALUES (2,
+	"e894e87c-8f27-469d-9586-566addf03869");
+INSERT INTO PE_PE
+	VALUES ("e894e87c-8f27-469d-9586-566addf03869",
+	1,
+	"dde814e7-f54e-4cb4-9f45-886008e6848d",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("dde814e7-f54e-4cb4-9f45-886008e6848d",
+	"00000000-0000-0000-0000-000000000000",
+	"3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
+	'TestEntities',
+	'',
+	0,
+	'../TestEntities.xtuml');

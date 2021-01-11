@@ -5,7 +5,12 @@ INSERT INTO EP_PKG
 	"3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
 	"3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
 	'Components',
-	'',
+	'This demonstration is loosely derived from the requirement to process payments in the CarPark Control application.
+The purpose is to demonstrate how state machine instances can communicate by dispatching events to each other.
+The original currency payment process has been replaced by a credit card transaction state model.
+Additionally, the actions of a customer are modelled as a driver for the transaction.
+Finally, a test driver state machine allows for stepping through the transitions in a controlled manner.
+',
 	0);
 INSERT INTO GD_MD
 	VALUES ("c8e8f5d9-c824-4f28-be06-e09789982fe1",
@@ -24,7 +29,7 @@ INSERT INTO GD_MD
 	200,
 	150,
 	0,
-	'',
+	'4.1.17',
 	'CarParkControl::Components');
 INSERT INTO GD_GE
 	VALUES ("4eea7be7-bf88-48f5-a7ed-5932c4a8f56c",

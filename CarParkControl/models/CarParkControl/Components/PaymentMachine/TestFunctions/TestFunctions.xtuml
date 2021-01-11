@@ -34,11 +34,32 @@ INSERT INTO DIM_DIA
 	0.000000,
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO S_SYNC
-	VALUES ("9ee3419c-2004-4285-91e4-25ab6513e59f",
+	VALUES ("6568e4b9-88e5-4cb2-bd45-795aa665cd3b",
 	"00000000-0000-0000-0000-000000000000",
-	'CreateCustomer',
+	'Next',
+	'This function progresses the demonstration through the steps which evolve the scenario.',
+	'select any tester from instances of TestRunner;
+generate TestRunner1:Next() to tester;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
 	'',
-	'create object instance customer of Customer;
+	0);
+INSERT INTO PE_PE
+	VALUES ("6568e4b9-88e5-4cb2-bd45-795aa665cd3b",
+	1,
+	"21b43ff1-cc09-4660-b628-c842c85e71fb",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("abdce5e8-fd72-4b14-83b9-68b62a32767d",
+	"00000000-0000-0000-0000-000000000000",
+	'Initialize',
+	'Set up a scenario which demonstrates interaction of several state machines.',
+	'create object instance tester of TestRunner;
+create object instance reader of CardReader;
+create object instance issuer of CardIssuer;
+relate reader to issuer across R1.''processes transactions for'';
+create object instance customer of Customer;
 select any reader from instances of CardReader;
 relate customer to reader across R2.''is paying at'';',
 	"ba5eda7a-def5-0000-0000-000000000000",
@@ -46,60 +67,7 @@ relate customer to reader across R2.''is paying at'';',
 	'',
 	0);
 INSERT INTO PE_PE
-	VALUES ("9ee3419c-2004-4285-91e4-25ab6513e59f",
-	1,
-	"21b43ff1-cc09-4660-b628-c842c85e71fb",
-	"00000000-0000-0000-0000-000000000000",
-	1);
-INSERT INTO S_SYNC
-	VALUES ("6568e4b9-88e5-4cb2-bd45-795aa665cd3b",
-	"00000000-0000-0000-0000-000000000000",
-	'Next',
-	'',
-	'select any customer from instances of Customer;
-generate Customer1:Next() to customer;',
-	"ba5eda7a-def5-0000-0000-000000000000",
-	1,
-	'',
-	0);
-INSERT INTO PE_PE
-	VALUES ("6568e4b9-88e5-4cb2-bd45-795aa665cd3b",
-	1,
-	"21b43ff1-cc09-4660-b628-c842c85e71fb",
-	"00000000-0000-0000-0000-000000000000",
-	1);
-INSERT INTO S_SYNC
-	VALUES ("8ba55eae-43e6-4786-b0c8-72f59e6c61b2",
-	"00000000-0000-0000-0000-000000000000",
-	'InitializeScenario',
-	'',
-	'create object instance reader of CardReader;
-create object instance issuer of CardIssuer;
-relate reader to issuer across R1.''processes transactions for'';
-::CreateCustomer();',
-	"ba5eda7a-def5-0000-0000-000000000000",
-	1,
-	'',
-	0);
-INSERT INTO PE_PE
-	VALUES ("8ba55eae-43e6-4786-b0c8-72f59e6c61b2",
-	1,
-	"21b43ff1-cc09-4660-b628-c842c85e71fb",
-	"00000000-0000-0000-0000-000000000000",
-	1);
-INSERT INTO S_SYNC
-	VALUES ("31323f4c-e636-45b9-a782-9ec5c4ecd15c",
-	"00000000-0000-0000-0000-000000000000",
-	'ApproveCard',
-	'',
-	'select any issuer from instances of CardIssuer;
-generate CardIssuer2:Approved() to issuer;',
-	"ba5eda7a-def5-0000-0000-000000000000",
-	1,
-	'',
-	0);
-INSERT INTO PE_PE
-	VALUES ("31323f4c-e636-45b9-a782-9ec5c4ecd15c",
+	VALUES ("abdce5e8-fd72-4b14-83b9-68b62a32767d",
 	1,
 	"21b43ff1-cc09-4660-b628-c842c85e71fb",
 	"00000000-0000-0000-0000-000000000000",

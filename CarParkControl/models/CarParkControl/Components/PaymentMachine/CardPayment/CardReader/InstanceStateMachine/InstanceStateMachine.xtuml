@@ -255,7 +255,7 @@ INSERT INTO SM_STATE
 	VALUES ("cacbe29b-0bbb-45ee-8fa0-ea27517838a5",
 	"704d2722-5f29-43fe-a454-457522db3676",
 	"00000000-0000-0000-0000-000000000000",
-	'AwaitingPinEntry',
+	'Awaiting_PIN_Entry',
 	3,
 	0);
 INSERT INTO SM_CH
@@ -709,8 +709,8 @@ INSERT INTO SM_ACT
 	VALUES ("02ce98eb-a9e4-4a3a-9e13-49df0aa1125f",
 	"704d2722-5f29-43fe-a454-457522db3676",
 	1,
-	'select any customer from instances of Customer;
-generate Customer2:PaymentApproved() to customer;',
+	'select one customer related by self->Customer[R2.''is servicing''];
+generate Customer5:PaymentApproved() to customer;',
 	'',
 	0);
 INSERT INTO SM_MOAH
@@ -853,7 +853,7 @@ INSERT INTO GD_GE
 	"cacbe29b-0bbb-45ee-8fa0-ea27517838a5",
 	41,
 	0,
-	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::AwaitingPinEntry');
+	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::Awaiting_PIN_Entry');
 INSERT INTO GD_SHP
 	VALUES ("7bdec87b-7475-46de-85fc-35b5a69c071b");
 INSERT INTO GD_NCS
@@ -1160,7 +1160,7 @@ INSERT INTO GD_GE
 	"35ff1cf8-cc8a-410c-86de-e5a146b38312",
 	42,
 	0,
-	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::AwaitingPinEntry::CardReader3: PinEntered');
+	'CarParkControl::Components::PaymentMachine::CardPayment::CardReader::Instance State Machine::Awaiting_PIN_Entry::CardReader3: PinEntered');
 INSERT INTO GD_CON
 	VALUES ("1d8bf487-dcb2-458a-98c8-e5acd8f8c755",
 	"00000000-0000-0000-0000-000000000000");
@@ -1294,8 +1294,8 @@ INSERT INTO DIM_ND
 	40.000000,
 	"f180c9b1-202b-4ddc-9646-7bd5f6084c7d");
 INSERT INTO DIM_GE
-	VALUES (4335.000000,
-	3248.000000,
+	VALUES (4328.000000,
+	3242.000000,
 	"f180c9b1-202b-4ddc-9646-7bd5f6084c7d",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -1605,6 +1605,7 @@ INSERT INTO O_OBJ_PROXY
 	'CardReader',
 	1,
 	'CardReader',
-	'',
+	'A simplified representation of a device which collects credit card and user identification data.
+In this representation, the device makes a real-time request for transaction authorization.',
 	"00000000-0000-0000-0000-000000000000",
 	'../CardReader.xtuml');

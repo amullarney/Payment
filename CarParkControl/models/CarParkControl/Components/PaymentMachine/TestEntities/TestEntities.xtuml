@@ -1,0 +1,82 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("dde814e7-f54e-4cb4-9f45-886008e6848d",
+	"00000000-0000-0000-0000-000000000000",
+	"3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
+	'TestEntities',
+	'For testing - or demonstration - purposes, it may be useful to construct ''artificial'' instances.
+These can use state models as a ''script'' to exercise the system under test in specific ways.',
+	0);
+INSERT INTO GD_MD
+	VALUES ("6b0726e1-095e-48c6-a385-0c807bc18d38",
+	112,
+	"dde814e7-f54e-4cb4-9f45-886008e6848d",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'',
+	'CarParkControl::Components::PaymentMachine::TestEntities');
+INSERT INTO GD_GE
+	VALUES ("366b4614-eda9-4cb1-8a1b-f6baedec8222",
+	"6b0726e1-095e-48c6-a385-0c807bc18d38",
+	"e894e87c-8f27-469d-9586-566addf03869",
+	21,
+	0,
+	'CarParkControl::Components::PaymentMachine::TestEntities::TestRunner');
+INSERT INTO GD_SHP
+	VALUES ("366b4614-eda9-4cb1-8a1b-f6baedec8222");
+INSERT INTO GD_NCS
+	VALUES ("366b4614-eda9-4cb1-8a1b-f6baedec8222");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"366b4614-eda9-4cb1-8a1b-f6baedec8222");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"366b4614-eda9-4cb1-8a1b-f6baedec8222",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("366b4614-eda9-4cb1-8a1b-f6baedec8222",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_DIA
+	VALUES ("6b0726e1-095e-48c6-a385-0c807bc18d38",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("dde814e7-f54e-4cb4-9f45-886008e6848d",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"aeec455f-5d86-4e1e-9051-591905fec578",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("aeec455f-5d86-4e1e-9051-591905fec578",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'PaymentMachine',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../PaymentMachine.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("3a6baa12-dc7e-42dd-b0dc-bf68e04c4795",
+	'CarParkControl',
+	1,
+	'../../../CarParkControl.xtuml');
